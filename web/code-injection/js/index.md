@@ -42,7 +42,6 @@ into a \texttt{\textless{}script\textgreater{}} tag.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{Shaded}
 % ...
 ```
 
@@ -62,5 +61,11 @@ When Pandoc compiles this Markdown document to HTML using the
 \texttt{web-script.hs} filter the following JavaScript code is injected
 into a \texttt{\textless{}script\textgreater{}} tag.
 
-If the target format isn't ``html'' or ``html5'' and the web filter
+\begin{Shaded}
+\begin{Highlighting}[]
+\ExtensionTok{pandoc} \NormalTok{-f markdown -t html --filter web-script.hs -o index.html index.md}
+\end{Highlighting}
+\end{Shaded}
+
+% ...
 ```
